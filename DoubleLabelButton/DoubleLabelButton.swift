@@ -10,6 +10,13 @@ import UIKit
 
 class DoubleLabelButton: UIButton {
     
+    private let photoView: UIImageView = {
+        let photoView = UIImageView()
+        photoView.contentMode = .scaleAspectFill
+        
+        return photoView
+    }()
+    
     private let topLabel: UILabel = {
         let label = UILabel()
         label.backgroundColor = .clear
@@ -42,6 +49,13 @@ class DoubleLabelButton: UIButton {
         }
     }
     
+    var photo: UIImage? = nil {
+        didSet {
+            photoView.image = photo
+            layoutIfNeeded()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setTitle("", for: .normal)
@@ -50,10 +64,16 @@ class DoubleLabelButton: UIButton {
         
         addSubview(topLabel)
         addSubview(bottomLabel)
+        addSubview(photoView)
         
-        addConstraints(withVisualFormat: "V:|-5-[v0][v1]-5-|", views: topLabel, bottomLabel)
-        addConstraints(withVisualFormat: "H:|-10-[v0]-10-|", views: topLabel)
-        addConstraints(withVisualFormat: "H:|-10-[v0]-10-|", views: bottomLabel)
+        addConstraints(withVisualFormat: "V:|-10-[v0][v1]-10-|", views: topLabel, bottomLabel)
+        addConstraints(withVisualFormat: "V:|-10-[v0]-10-|", views: photoView)
+        addConstraints(withVisualFormat: "H:|-10-[v0(<=40)]-5-[v1]-10-|", views: photoView, topLabel)
+        addConstraints(withVisualFormat: "H:[v0]-5-[v1]-10-|", views: photoView, bottomLabel)
+        
+        addConstraint(
+            NSLayoutConstraint(item: photoView, attribute: .width, relatedBy: .equal, toItem: photoView, attribute: .height, multiplier: 1.0, constant: 1.0)
+            )
         
         layoutIfNeeded()
     }
@@ -63,9 +83,11 @@ class DoubleLabelButton: UIButton {
             if isHighlighted {
                 topLabel.textColor = .yellow
                 bottomLabel.textColor = .yellow
+                photoView.alpha = 0.8
             } else {
                 topLabel.textColor = .black
                 bottomLabel.textColor = .gray
+                photoView.alpha = 1.0
             }
             
         }

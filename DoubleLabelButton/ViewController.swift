@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     func setupFirstButton() {
         firstButton.topText = "Follower"
         firstButton.bottomText = "14k"
+        firstButton.photo = UIImage(imageLiteralResourceName: "image")
         firstButton.layer.borderColor = UIColor.red.cgColor
         firstButton.layer.borderWidth = 1.0
         firstButton.layer.cornerRadius = 7.0
@@ -31,11 +32,20 @@ class ViewController: UIViewController {
     func setupSecondButton() {
         secondButton.topText = "LAMAMA'S FRIENDS"
         secondButton.bottomText = "1,633,833,740"
+        secondButton.photo = UIImage(imageLiteralResourceName: "image")
         secondButton.layer.borderColor = UIColor.red.cgColor
         secondButton.layer.borderWidth = 1.0
         secondButton.layer.cornerRadius = 7.0
+        secondButton.backgroundColor = .white
     }
 
-
+    @IBAction func firstTapped(_ sender: Any) {
+        view.backgroundColor = .green
+    }
+    
+    @IBAction func secondTapped(_ sender: Any) {
+        view.backgroundColor = .purple
+    }
+    
 }
 
