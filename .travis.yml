@@ -1,20 +1,6 @@
-language: swift
+language: objective-c
 osx_image: xcode10.1
-os: osx
-branches:
-  only:
-  - master
-
-before_install:
-  - gem install fastlane --no-ri --no-rdoc --no-document
-
-jobs:
-  include:
-    - stage: Swiflint
-      script:
-        - ./Pods/SwiftLint/swiftlint --reporter junit
-    - stage: Build App
-      # Build And Upload to TestFlight
-      script:
-        - fastlane beta
-
+install:
+  - bundle install
+script:
+  - fastlane beta
