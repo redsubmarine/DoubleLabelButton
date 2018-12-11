@@ -22,14 +22,14 @@ platform :ios do
     #sync_code_signing(type: "appstore") 
     #match(type: 'appstore', readonly: true)
     
-    create_keychain(
-      name: ENV["MATCH_KEYCHAIN_NAME"],
-      password: ENV["MATCH_PASSWORD"],
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      add_to_search_list: true
-    )
+    #create_keychain(
+    #  name: ENV["MATCH_KEYCHAIN_NAME"],
+    #  password: ENV["MATCH_PASSWORD"],
+    #  default_keychain: true,
+    #  unlock: true,
+    #  timeout: 3600,
+    #  add_to_search_list: true
+    #)
 
     match(
       type: "appstore",
