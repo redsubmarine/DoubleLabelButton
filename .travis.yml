@@ -1,6 +1,8 @@
 language: objective-c
 osx_image: xcode10.1
-install:
+before_install:
   - bundle install
+before_script:
+  - bundle exec fastlane setup
 script:
-  - fastlane beta
+  - bundle exec fastlane beta
