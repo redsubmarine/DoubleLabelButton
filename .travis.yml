@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode10.1
 before_install:
   - bundle install
-  - bundle exec pod update
+  - bundle exec pod repo update 
 before_script:
   - bundle exec fastlane setup
 script:
