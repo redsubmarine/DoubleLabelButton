@@ -31,12 +31,12 @@ platform :ios do
     #  add_to_search_list: true
     #)
 
-    match(
-      type: "appstore",
-      keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
-      keychain_password: ENV["MATCH_PASSWORD"],
-      readonly: true
-    )
+    #match(
+    #  type: "appstore",
+    #  keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+    #  keychain_password: ENV["MATCH_PASSWORD"],
+    #  readonly: true
+    #)
 
     build_app
     upload_to_testflight
