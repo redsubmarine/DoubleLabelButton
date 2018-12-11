@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83E276AEFE5334BBB1F278C3 /* Pods_DoubleLabelButtonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD1125FF0D4DA71AB7D4699C /* Pods_DoubleLabelButtonTests.framework */; };
 		9D8D8DE021B96D7800380176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D8DDF21B96D7800380176 /* AppDelegate.swift */; };
 		9D8D8DE221B96D7800380176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D8DE121B96D7800380176 /* ViewController.swift */; };
 		9D8D8DE521B96D7800380176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D8DE321B96D7800380176 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9D8D8DEA21B96D7A00380176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D8DE821B96D7A00380176 /* LaunchScreen.storyboard */; };
 		9D8D8DF521B96D7A00380176 /* DoubleLabelButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D8DF421B96D7A00380176 /* DoubleLabelButtonTests.swift */; };
 		9D8D8E0021B96D8A00380176 /* DoubleLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D8DFF21B96D8A00380176 /* DoubleLabelButton.swift */; };
+		D92E6F44E0FBF3223FFC4315 /* Pods_DoubleLabelButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD0E2BDDACDE23FAF35528C /* Pods_DoubleLabelButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31A1B94AE49B31E6C88C121E /* Pods-DoubleLabelButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleLabelButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleLabelButton/Pods-DoubleLabelButton.release.xcconfig"; sourceTree = "<group>"; };
+		3AD0E2BDDACDE23FAF35528C /* Pods_DoubleLabelButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleLabelButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		407E7DC7F610AD3279BABA9F /* Pods-DoubleLabelButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleLabelButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleLabelButton/Pods-DoubleLabelButton.debug.xcconfig"; sourceTree = "<group>"; };
 		9D8D8DDC21B96D7800380176 /* DoubleLabelButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleLabelButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8D8DDF21B96D7800380176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D8D8DE121B96D7800380176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		9D8D8DF421B96D7A00380176 /* DoubleLabelButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLabelButtonTests.swift; sourceTree = "<group>"; };
 		9D8D8DF621B96D7A00380176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D8D8DFF21B96D8A00380176 /* DoubleLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLabelButton.swift; sourceTree = "<group>"; };
+		A11538D1C338856EDB198837 /* Pods-DoubleLabelButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleLabelButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleLabelButtonTests/Pods-DoubleLabelButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD1125FF0D4DA71AB7D4699C /* Pods_DoubleLabelButtonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoubleLabelButtonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F189F74C0D7958F77B00D1 /* Pods-DoubleLabelButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoubleLabelButtonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoubleLabelButtonTests/Pods-DoubleLabelButtonTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92E6F44E0FBF3223FFC4315 /* Pods_DoubleLabelButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E276AEFE5334BBB1F278C3 /* Pods_DoubleLabelButtonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681EAEC587B6DB2CD7CC0EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD0E2BDDACDE23FAF35528C /* Pods_DoubleLabelButton.framework */,
+				DD1125FF0D4DA71AB7D4699C /* Pods_DoubleLabelButtonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D8D8DD321B96D7800380176 = {
 			isa = PBXGroup;
 			children = (
 				9D8D8DDE21B96D7800380176 /* DoubleLabelButton */,
 				9D8D8DF321B96D7A00380176 /* DoubleLabelButtonTests */,
 				9D8D8DDD21B96D7800380176 /* Products */,
+				AD896EA21B62D5F1BC8C6931 /* Pods */,
+				681EAEC587B6DB2CD7CC0EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,17 @@
 			path = DoubleLabelButtonTests;
 			sourceTree = "<group>";
 		};
+		AD896EA21B62D5F1BC8C6931 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				407E7DC7F610AD3279BABA9F /* Pods-DoubleLabelButton.debug.xcconfig */,
+				31A1B94AE49B31E6C88C121E /* Pods-DoubleLabelButton.release.xcconfig */,
+				A11538D1C338856EDB198837 /* Pods-DoubleLabelButtonTests.debug.xcconfig */,
+				F7F189F74C0D7958F77B00D1 /* Pods-DoubleLabelButtonTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8D8DF921B96D7A00380176 /* Build configuration list for PBXNativeTarget "DoubleLabelButton" */;
 			buildPhases = (
+				3460AA923D9197157D2C05C4 /* [CP] Check Pods Manifest.lock */,
 				9D8D8DD821B96D7800380176 /* Sources */,
 				9D8D8DD921B96D7800380176 /* Frameworks */,
 				9D8D8DDA21B96D7800380176 /* Resources */,
+				66518EA1F6809E32D34068EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8D8DFC21B96D7A00380176 /* Build configuration list for PBXNativeTarget "DoubleLabelButtonTests" */;
 			buildPhases = (
+				5F36096B9FB1170262981BE1 /* [CP] Check Pods Manifest.lock */,
 				9D8D8DEC21B96D7A00380176 /* Sources */,
 				9D8D8DED21B96D7A00380176 /* Frameworks */,
 				9D8D8DEE21B96D7A00380176 /* Resources */,
@@ -194,6 +229,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3460AA923D9197157D2C05C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoubleLabelButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F36096B9FB1170262981BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoubleLabelButtonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66518EA1F6809E32D34068EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DoubleLabelButton/Pods-DoubleLabelButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoubleLabelButton/Pods-DoubleLabelButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D8D8DD821B96D7800380176 /* Sources */ = {
@@ -362,6 +470,7 @@
 		};
 		9D8D8DFA21B96D7A00380176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407E7DC7F610AD3279BABA9F /* Pods-DoubleLabelButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -382,6 +491,7 @@
 		};
 		9D8D8DFB21B96D7A00380176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A1B94AE49B31E6C88C121E /* Pods-DoubleLabelButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -402,6 +512,7 @@
 		};
 		9D8D8DFD21B96D7A00380176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A11538D1C338856EDB198837 /* Pods-DoubleLabelButtonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -423,6 +534,7 @@
 		};
 		9D8D8DFE21B96D7A00380176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F189F74C0D7958F77B00D1 /* Pods-DoubleLabelButtonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
