@@ -19,8 +19,9 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    sync_code_signing(type: "appstore") 
-    match(type: 'appstore', readonly: true)
+    #sync_code_signing(type: "appstore") 
+    #match(type: 'appstore', readonly: true)
+
     
     #create_keychain(
     #  name: ENV["MATCH_KEYCHAIN_NAME"],
@@ -38,7 +39,12 @@ platform :ios do
     #  readonly: true
     #)
 
-    build_app
+
+    get_certificates
+    get_provisioning_profile
+    #build_app
+    build_app(export_xcargs: "-allowProvisioningUpdates")
+
     upload_to_testflight
   end
 end
